@@ -20,17 +20,13 @@ const App = () => {
         <h1>React &amp; Twilio Phone</h1>
       </header>
 
-      <main>
-        {!clicked && <button onClick={handleClick}>Connect to Phone</button>}
+      <main >
+        {!clicked && <button onClick={handleClick} >Connect to Phone</button>}
 
-        {token ? <Phone token={token}></Phone> : <p>Loading...</p>}
+        {token ? <Phone token={token}></Phone> : <p>Click to connect</p>}
       </main>
 
-      <footer>
-        <p>
-          Built on Twitch by <a href="https://twitch.tv/phil_nash">phil_nash</a>
-        </p>
-      </footer>
+      
     </div>
   );
 };
